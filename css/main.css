@@ -1,9 +1,30 @@
-body {
+*{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
+    /* BODY - tegini doimiy ravishda har tomonida 8px margini bo'ladi shuni doimiy ravishda olib tashlashimiz kerak, doim -> margin: 0; */
+    background-color: #FEFCF7;
+    /* background-color: #00f; */
+    font-family: "Fraunces", "Arial", sans-serif;
+    font-weight: 900;
+}
+
+ul, 
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container {
-    width: 1320px;
+    width: 1310px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;
@@ -156,7 +177,7 @@ body {
 .our-collection__list {
     position: absolute;
     top: 126px;
-    left: 237px;
+    left: 204px;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
@@ -201,6 +222,10 @@ body {
 /* /OUR COLLECTION END */
 /* --------------------------------------- */
 /* CHOOSE SECTION STYLES START */
+
+.choose-section {
+    margin-bottom: 351px;
+}
 
 .choose-section__wrapper {
     padding-top: 100px;
@@ -256,12 +281,12 @@ body {
 
 
 .choose-section__item--title {
-font-family: 'Fraunces';
-font-weight: 900;
-font-size: 24px;
-line-height: 32px;
-text-align: center;
-color: #FEFCF7;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FEFCF7;
 }
 
 .choose-section__item--title::before {
@@ -273,7 +298,7 @@ color: #FEFCF7;
     margin-left: auto;
     background-image: url(../images/coffee-been.svg);
     background-repeat: no-repeat;
-    /* background-color: red; */
+    content: "";
 }
 
 .choose-section__item:nth-child(2) .choose-section__item--title::before {
@@ -297,4 +322,77 @@ color: #FEFCF7;
 }
 
 /* /CHOOSE SECTION STYLES END */
+/*** WORK SECTIN STYLES START ****/
+
+.works-section {
+    margin-bottom: 200px;
+}
+
+.works-section__wrapper {
+    padding-left: 85px;
+}
+
+.works-section__title {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F; 
+}
+
+.works-section__img {
+    margin-bottom: 67px;
+}
+
+.works-section__list {
+    display: flex;
+    list-style: none;
+}
+
+.works-section__item {
+    width: 285px;
+    margin-bottom: 64px;
+}
+
+.works-section__item:not(:last-child) {
+    margin-right: 95px;
+}
+
+.works-section__item--number {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fdd6ba;
+}
+
+.work-section__item--title {
+    width: 240px;
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333d4b;
+}
+
+.works-section__item--desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+}
+
+.works-section__btn {
+    display: inline-block;
+    padding: 15px 31px;
+    font-style: 18px;
+    line-height: 25px;
+    background-color: #0E8784;
+    color: #FEFCF7;    
+    border-radius: 6px;
+}
+/*** WORK SECTIN STYLES END ****/
 /********* MAIN STYLES END ********/
